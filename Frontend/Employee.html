@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Registration</title>
+    <script src="../Day 4 - 6/Day 5/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Amalitech Employee Management</h1>
+      <h2>Employee Registration</h2>
+
+      <nav>
+        <ul>
+          <li><a href="#registration">Register</a></li>
+          <li><a href="#employees">Employees</a></li>
+          <li><a href="#help">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="registration">
+        <h2>Personal Information</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Basic details</legend>
+
+            <label for="firstName">First name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+
+            <label for="lastName">Last name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="dob" />
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Details</legend>
+            <br />
+
+            <label for="Specialization">Specialization:</label>
+            <select id="Specialization" name="Specialization" required>
+              <option value="">-- Select field --</option>
+              <option value="frontend">Frontend Development</option>
+              <option value="backend">Backend Development</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="data-science">Data Science</option>
+              <option value="devops">DevOps</option>
+            </select>
+
+            <fieldset>
+              <legend>Employment type</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="employmentType"
+                  value="Onsite"
+                  checked
+                />
+                Onsite</label
+              >
+              <label
+                ><input type="radio" name="employmentType" value="Remote" />
+                Remote</label
+              >
+              <label
+                ><input type="radio" name="employmentType" value="Contract" />
+                Contract</label
+              >
+            </fieldset>
+
+            <fieldset>
+              <legend>Additional Skills</legend>
+              <label
+                ><input
+                  type="checkbox"
+                  id="communication"
+                  name="skills"
+                  value="communication"
+                />
+                Communication</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  id="teamwork"
+                  name="skills"
+                  value="teamwork"
+                />
+                Teamwork</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  id="ps"
+                  name="skills"
+                  value="problem-solving"
+                />
+                Problem-solving</label
+              >
+            </fieldset>
+
+            <label for="profileImage">Profile image:</label>
+            <input
+              type="file"
+              id="profileImage"
+              name="profileImage"
+              accept="image/*"
+            />
+
+            <label for="bio">Short info about you:</label>
+            <textarea
+              id="bio"
+              name="bio"
+              rows="5"
+              cols="50"
+              placeholder="Write a short bio..."
+            ></textarea>
+          </fieldset>
+
+          <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+          </p>
+        </form>
+      </section>
+
+      <section id="employees">
+        <h2>Registered Employees</h2>
+
+        <table border="1">
+          <caption>
+            Employees
+          </caption>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First</th>
+              <th>Last</th>
+              <th>Email</th>
+              <th>Department</th>
+              <th>Employment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Jerry</td>
+              <td>Howusu</td>
+              <td>jerry.howusu@amalitechtraining.org</td>
+              <td>Frontend Development</td>
+              <td>Onsite</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Newton</td>
+              <td>Ganu</td>
+              <td>newton.ganu@amalitechtraining.org</td>
+              <td>Data Science</td>
+              <td>Remote</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="help">
+        <h2>Help</h2>
+        <p>Contact the HR department for any assistance</p>
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy; Amalitech Training</small>
+    </footer>
+  </body>
+</html>
