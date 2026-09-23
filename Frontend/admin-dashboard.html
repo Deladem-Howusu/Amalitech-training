@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Amalitech Employee Management</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <h2>Navigation</h2>
+
+      <nav>
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#employees">Employee List</a></li>
+          <li><a href="#statistics">Statistics</a></li>
+          <li><a href="#help">Help</a></li>
+        </ul>
+
+        <ul class="bottom-nav">
+          <li><a href="#settings">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <header class="header">
+      <div>
+        <h1>Amalitech Employee Management</h1>
+      </div>
+
+      <div class="header-user">
+        <span>Welcome, Admin</span>
+        <button type="button">Logout</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section id="dashboard" class="dashboard-intro">
+        <h2>Dashboard Overview</h2>
+
+        <p>
+          Welcome to the admin dashboard. See statistics, manage employees, and
+          perform quick actions from here.
+        </p>
+      </section>
+
+      <section id="statistics" class="statistics">
+        <h2>Statistics</h2>
+
+        <div class="stat-cards">
+          <article class="stat-card">
+            <h3>Total Employees</h3>
+            <p>248</p>
+            <span>Registered employees</span>
+          </article>
+
+          <article class="stat-card">
+            <h3>Departments</h3>
+            <p>12</p>
+            <span>Active departments</span>
+          </article>
+
+          <article class="stat-card">
+            <h3>New Employees</h3>
+            <p>18</p>
+            <span>This month</span>
+          </article>
+
+          <article class="stat-card">
+            <h3>Pending Requests</h3>
+            <p>7</p>
+            <span>Need attention</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="quick-actions">
+        <h2>Quick Actions</h2>
+
+        <div class="action-buttons">
+          <button type="button">Add Employee</button>
+
+          <button type="button">View Employees</button>
+
+          <button type="button">Generate Report</button>
+        </div>
+      </section>
+
+      <section id="employees" class="employees">
+        <div class="section-header">
+          <h2>Recent Employees</h2>
+
+          <a href="#employees">View All</a>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Jerry Howusu</td>
+                <td>Frontend Development</td>
+                <td>jerry@example.com</td>
+                <td>Active</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Newton Ganu</td>
+                <td>Data Science</td>
+                <td>newton@example.com</td>
+                <td>Active</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Sarah Owusu</td>
+                <td>Marketing</td>
+                <td>sarah@example.com</td>
+                <td>Pending</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Michael Mensah</td>
+                <td>Engineering</td>
+                <td>michael@example.com</td>
+                <td>Active</td>
+                <td>
+                  <button type="button">View</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- <section id="registration" class="registration">
+        <h2>Employee Registration</h2>
+
+        <form>
+          <div class="form-group">
+            <label for="name">Employee Name</label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter employee name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter employee email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department</label>
+
+            <select id="department" name="department">
+              <option value="">Select department</option>
+
+              <option value="frontend">Frontend Development</option>
+
+              <option value="backend">Backend Development</option>
+
+              <option value="data-science">Data Science</option>
+
+              <option value="cybersecurity">Cybersecurity</option>
+            </select>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit">Register Employee</button>
+
+            <button type="reset">Cancel</button>
+          </div>
+        </form>
+      </section> -->
+
+      <!-- <section id="settings" class="settings">
+        <h2>Settings</h2>
+
+        <p>Manage your account settings and preferences here.</p>
+      </section>
+
+      <section id="help" class="help">
+        <h2>Help</h2>
+
+        <p>Contact the HR department if you need assistance.</p>
+      </section> -->
+    </main>
+  </body>
+</html>
