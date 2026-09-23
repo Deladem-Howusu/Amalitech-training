@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Add an employee in WorkPro">
+  <title>Add Employee | WorkPro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="WorkPro home"><img src="assets/logo.svg" alt="WorkPro"></a>
+      <nav class="sidebar-nav">
+        <p class="nav-heading">Workspace</p>
+        <a class="nav-link" href="index.html"><span class="nav-icon">⌂</span><span>Dashboard</span></a>
+        <a class="nav-link" href="employees.html"><span class="nav-icon">◎</span><span>Employees</span></a>
+        <a class="nav-link" href="projects.html"><span class="nav-icon">◇</span><span>Projects</span></a>
+        <a class="nav-link active" href="add-employee.html" aria-current="page"><span class="nav-icon">＋</span><span>Add Employee</span></a>
+        <p class="nav-heading">Insights</p>
+        <a class="nav-link" href="#"><span class="nav-icon">▥</span><span>Reports</span></a>
+        <a class="nav-link" href="#"><span class="nav-icon">◴</span><span>Time Tracking</span></a>
+        <a class="nav-link" href="#"><span class="nav-icon">⚙</span><span>Settings</span></a>
+      </nav>
+      <div class="sidebar-card"><div class="sidebar-card-icon">?</div><strong>Need help?</strong><p>Visit our support center for quick answers.</p><a href="#">Get support</a></div>
+    </aside>
+
+    <div class="main-area">
+      <header class="topbar">
+        <form class="search-form" role="search"><label class="sr-only" for="global-search">Search workspace</label><input id="global-search" type="search" placeholder="Search employees, projects..."><button type="submit" aria-label="Search">⌕</button></form>
+        <div class="topbar-actions"><button class="icon-button" type="button" aria-label="Notifications">♢<span class="notification-dot" aria-hidden="true"></span></button><button class="icon-button" type="button" aria-label="Messages">▢</button><button class="account-button" type="button" aria-label="Open account menu"><img src="assets/avatar.svg" alt=""><span class="account-copy"><strong>Alex Morgan</strong><small>Administrator</small></span><span aria-hidden="true">⌄</span></button></div>
+      </header>
+
+      <main class="content form-page">
+        <div class="page-title-row">
+          <div><p class="eyebrow">People</p><h1>Add Employee</h1><p class="subtitle">Create a complete employee profile for your workspace.</p></div>
+          <a class="btn btn-secondary" href="employees.html">Back to Employees</a>
+        </div>
+
+        <form class="panel employee-form" action="#" method="post">
+          <section class="form-section" aria-labelledby="personal-title">
+            <div class="form-section-heading"><span class="step-number">1</span><div><h2 id="personal-title">Personal Information</h2><p>Basic profile and contact details.</p></div></div>
+            <div class="form-grid">
+              <div class="field"><label for="first-name">First name</label><input id="first-name" name="first-name" type="text" placeholder="e.g. Sarah" required></div>
+              <div class="field"><label for="last-name">Last name</label><input id="last-name" name="last-name" type="text" placeholder="e.g. Mills" required></div>
+              <div class="field"><label for="email">Work email</label><input id="email" name="email" type="email" placeholder="sarah@company.com" required></div>
+              <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="+233 24 000 0000"></div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="employment-title">
+            <div class="form-section-heading"><span class="step-number">2</span><div><h2 id="employment-title">Employment Details</h2><p>Role, department, and employment status.</p></div></div>
+            <div class="form-grid">
+              <div class="field"><label for="department">Department</label><select id="department" name="department" required><option value="">Select department</option><option>Engineering</option><option>Product Design</option><option>Marketing</option><option>Finance</option><option>Operations</option></select></div>
+              <div class="field"><label for="role">Job title</label><input id="role" name="role" type="text" placeholder="e.g. Backend Engineer" required></div>
+              <div class="field"><label for="employment-type">Employment type</label><select id="employment-type" name="employment-type"><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Internship</option></select></div>
+              <div class="field"><label for="start-date">Start date</label><input id="start-date" name="start-date" type="date"></div>
+              <div class="field"><label for="manager">Manager</label><select id="manager" name="manager"><option value="">Select manager</option><option>Alex Morgan</option><option>Priya Shah</option><option>Marcus Lee</option><option>Jessica Brown</option></select></div>
+              <div class="field"><label for="status">Status</label><select id="status" name="status"><option>Active</option><option>Onboarding</option><option>On Leave</option></select></div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="notes-title">
+            <div class="form-section-heading"><span class="step-number">3</span><div><h2 id="notes-title">Additional Notes</h2><p>Add role context, onboarding notes, or special instructions.</p></div></div>
+            <div class="field"><label for="notes">Notes</label><textarea id="notes" name="notes" rows="6" placeholder="Enter any helpful notes about this employee..."></textarea><small>Maximum 500 characters.</small></div>
+          </section>
+
+          <div class="form-actions"><button class="btn btn-secondary" type="reset">Clear Form</button><button class="btn btn-primary" type="submit">Save Employee</button></div>
+        </form>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

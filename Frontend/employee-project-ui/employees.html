@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WorkPro employee management page">
+  <title>Employees | WorkPro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="WorkPro home"><img src="assets/logo.svg" alt="WorkPro"></a>
+      <nav class="sidebar-nav">
+        <p class="nav-heading">Workspace</p>
+        <a class="nav-link" href="index.html"><span class="nav-icon">⌂</span><span>Dashboard</span></a>
+        <a class="nav-link active" href="employees.html" aria-current="page"><span class="nav-icon">◎</span><span>Employees</span></a>
+        <a class="nav-link" href="projects.html"><span class="nav-icon">◇</span><span>Projects</span></a>
+        <a class="nav-link" href="add-employee.html"><span class="nav-icon">＋</span><span>Add Employee</span></a>
+        <p class="nav-heading">Insights</p>
+        <a class="nav-link" href="#"><span class="nav-icon">▥</span><span>Reports</span></a>
+        <a class="nav-link" href="#"><span class="nav-icon">◴</span><span>Time Tracking</span></a>
+        <a class="nav-link" href="#"><span class="nav-icon">⚙</span><span>Settings</span></a>
+      </nav>
+      <div class="sidebar-card"><div class="sidebar-card-icon">?</div><strong>Need help?</strong><p>Visit our support center for quick answers.</p><a href="#">Get support</a></div>
+    </aside>
+
+    <div class="main-area">
+      <header class="topbar">
+        <form class="search-form" role="search"><label class="sr-only" for="global-search">Search workspace</label><input id="global-search" type="search" placeholder="Search employees, projects..."><button type="submit" aria-label="Search">⌕</button></form>
+        <div class="topbar-actions"><button class="icon-button" type="button" aria-label="Notifications">♢<span class="notification-dot" aria-hidden="true"></span></button><button class="icon-button" type="button" aria-label="Messages">▢</button><button class="account-button" type="button" aria-label="Open account menu"><img src="assets/avatar.svg" alt=""><span class="account-copy"><strong>Alex Morgan</strong><small>Administrator</small></span><span aria-hidden="true">⌄</span></button></div>
+      </header>
+
+      <main class="content">
+        <div class="page-title-row">
+          <div><p class="eyebrow">People</p><h1>Employees</h1><p class="subtitle">Manage employee profiles, roles, teams, and availability.</p></div>
+          <a class="btn btn-primary" href="add-employee.html">+ Add Employee</a>
+        </div>
+
+        <section class="stats-grid employee-stats" aria-label="Employee summary">
+          <article class="stat-card blue"><span class="stat-icon">◎</span><div><p>Total Employees</p><strong>148</strong><small>Across 8 departments</small></div></article>
+          <article class="stat-card green"><span class="stat-icon">✓</span><div><p>Active Today</p><strong>129</strong><small>87% attendance</small></div></article>
+          <article class="stat-card purple"><span class="stat-icon">✦</span><div><p>New Hires</p><strong>8</strong><small>This month</small></div></article>
+          <article class="stat-card orange"><span class="stat-icon">◴</span><div><p>On Leave</p><strong>12</strong><small>Approved leave</small></div></article>
+        </section>
+
+        <section class="panel table-panel" aria-labelledby="employees-table-title">
+          <div class="panel-heading table-toolbar">
+            <div><h2 id="employees-table-title">Employee Directory</h2><p>Showing current organization members</p></div>
+            <div class="toolbar-controls">
+              <label class="sr-only" for="department-filter">Filter by department</label>
+              <select id="department-filter"><option>All Departments</option><option>Engineering</option><option>Product Design</option><option>Marketing</option><option>Finance</option></select>
+              <button class="btn btn-secondary" type="button">Export</button>
+            </div>
+          </div>
+
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th scope="col">Employee</th><th scope="col">Department</th><th scope="col">Role</th><th scope="col">Status</th><th scope="col">Joined</th><th scope="col">Actions</th></tr></thead>
+              <tbody>
+                <tr><td><div class="person-cell"><span class="avatar initials blue-bg">SM</span><div><strong>Sarah Mills</strong><small>sarah@workpro.app</small></div></div></td><td>Product Design</td><td>Senior UI Designer</td><td><span class="status success">Active</span></td><td>Sep 02, 2026</td><td><button class="table-action" type="button" aria-label="More actions for Sarah Mills">•••</button></td></tr>
+                <tr><td><div class="person-cell"><span class="avatar initials purple-bg">DK</span><div><strong>Daniel Kim</strong><small>daniel@workpro.app</small></div></div></td><td>Engineering</td><td>Backend Engineer</td><td><span class="status success">Active</span></td><td>Aug 11, 2025</td><td><button class="table-action" type="button" aria-label="More actions for Daniel Kim">•••</button></td></tr>
+                <tr><td><div class="person-cell"><span class="avatar initials green-bg">JT</span><div><strong>Jordan Taylor</strong><small>jordan@workpro.app</small></div></div></td><td>Marketing</td><td>Growth Manager</td><td><span class="status warning">On Leave</span></td><td>Mar 19, 2024</td><td><button class="table-action" type="button" aria-label="More actions for Jordan Taylor">•••</button></td></tr>
+                <tr><td><div class="person-cell"><span class="avatar initials orange-bg">RA</span><div><strong>Renee Adams</strong><small>renee@workpro.app</small></div></div></td><td>Finance</td><td>Finance Analyst</td><td><span class="status success">Active</span></td><td>Jan 08, 2026</td><td><button class="table-action" type="button" aria-label="More actions for Renee Adams">•••</button></td></tr>
+                <tr><td><div class="person-cell"><span class="avatar initials cyan-bg">OC</span><div><strong>Owen Clark</strong><small>owen@workpro.app</small></div></div></td><td>Engineering</td><td>QA Engineer</td><td><span class="status neutral">Away</span></td><td>Nov 26, 2025</td><td><button class="table-action" type="button" aria-label="More actions for Owen Clark">•••</button></td></tr>
+                <tr><td><div class="person-cell"><span class="avatar initials red-bg">LP</span><div><strong>Lena Parker</strong><small>lena@workpro.app</small></div></div></td><td>Product Design</td><td>UX Researcher</td><td><span class="status success">Active</span></td><td>May 14, 2026</td><td><button class="table-action" type="button" aria-label="More actions for Lena Parker">•••</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="pagination" aria-label="Table pagination"><span>Showing 1–6 of 148 employees</span><div><button type="button" disabled>Previous</button><button type="button" class="current" aria-current="page">1</button><button type="button">2</button><button type="button">3</button><button type="button">Next</button></div></div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

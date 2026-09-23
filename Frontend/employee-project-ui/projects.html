@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WorkPro project management page">
+  <title>Projects | WorkPro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="WorkPro home"><img src="assets/logo.svg" alt="WorkPro"></a>
+      <nav class="sidebar-nav">
+        <p class="nav-heading">Workspace</p>
+        <a class="nav-link" href="index.html"><span class="nav-icon">⌂</span><span>Dashboard</span></a>
+        <a class="nav-link" href="employees.html"><span class="nav-icon">◎</span><span>Employees</span></a>
+        <a class="nav-link active" href="projects.html" aria-current="page"><span class="nav-icon">◇</span><span>Projects</span></a>
+        <a class="nav-link" href="add-employee.html"><span class="nav-icon">＋</span><span>Add Employee</span></a>
+        <p class="nav-heading">Insights</p>
+        <a class="nav-link" href="#"><span class="nav-icon">▥</span><span>Reports</span></a>
+        <a class="nav-link" href="#"><span class="nav-icon">◴</span><span>Time Tracking</span></a>
+        <a class="nav-link" href="#"><span class="nav-icon">⚙</span><span>Settings</span></a>
+      </nav>
+      <div class="sidebar-card"><div class="sidebar-card-icon">?</div><strong>Need help?</strong><p>Visit our support center for quick answers.</p><a href="#">Get support</a></div>
+    </aside>
+
+    <div class="main-area">
+      <header class="topbar">
+        <form class="search-form" role="search"><label class="sr-only" for="global-search">Search workspace</label><input id="global-search" type="search" placeholder="Search employees, projects..."><button type="submit" aria-label="Search">⌕</button></form>
+        <div class="topbar-actions"><button class="icon-button" type="button" aria-label="Notifications">♢<span class="notification-dot" aria-hidden="true"></span></button><button class="icon-button" type="button" aria-label="Messages">▢</button><button class="account-button" type="button" aria-label="Open account menu"><img src="assets/avatar.svg" alt=""><span class="account-copy"><strong>Alex Morgan</strong><small>Administrator</small></span><span aria-hidden="true">⌄</span></button></div>
+      </header>
+
+      <main class="content">
+        <div class="page-title-row">
+          <div><p class="eyebrow">Work</p><h1>Projects</h1><p class="subtitle">Plan, prioritize, and track project delivery.</p></div>
+          <button class="btn btn-primary" type="button">+ New Project</button>
+        </div>
+
+        <section class="project-card-grid" aria-label="Project cards">
+          <article class="panel project-card">
+            <div class="project-card-top"><div class="project-icon blue-bg">MP</div><span class="status success">On Track</span></div>
+            <div><h2>Mobile App Redesign</h2><p>Refresh the mobile experience and improve onboarding conversion.</p></div>
+            <div class="project-meta"><span><small>Owner</small><strong>Sarah Mills</strong></span><span><small>Due</small><strong>Sep 18</strong></span></div>
+            <div class="progress-wrap"><div class="progress-label"><span>Progress</span><strong>78%</strong></div><div class="progress"><span style="width:78%"></span></div></div>
+            <div class="member-stack" aria-label="4 project members"><span>SM</span><span>DK</span><span>LP</span><span>+1</span></div>
+          </article>
+
+          <article class="panel project-card">
+            <div class="project-card-top"><div class="project-icon purple-bg">CM</div><span class="status warning">At Risk</span></div>
+            <div><h2>CRM Migration</h2><p>Migrate legacy customer data into the new cloud CRM platform.</p></div>
+            <div class="project-meta"><span><small>Owner</small><strong>Daniel Kim</strong></span><span><small>Due</small><strong>Sep 22</strong></span></div>
+            <div class="progress-wrap"><div class="progress-label"><span>Progress</span><strong>61%</strong></div><div class="progress"><span style="width:61%"></span></div></div>
+            <div class="member-stack" aria-label="6 project members"><span>DK</span><span>OC</span><span>RA</span><span>+3</span></div>
+          </article>
+
+          <article class="panel project-card">
+            <div class="project-card-top"><div class="project-icon green-bg">CP</div><span class="status success">On Track</span></div>
+            <div><h2>Client Portal</h2><p>Build self-service tools for documents, billing, and support.</p></div>
+            <div class="project-meta"><span><small>Owner</small><strong>Owen Clark</strong></span><span><small>Due</small><strong>Sep 29</strong></span></div>
+            <div class="progress-wrap"><div class="progress-label"><span>Progress</span><strong>84%</strong></div><div class="progress"><span style="width:84%"></span></div></div>
+            <div class="member-stack" aria-label="5 project members"><span>OC</span><span>LP</span><span>JT</span><span>+2</span></div>
+          </article>
+
+          <article class="panel project-card">
+            <div class="project-card-top"><div class="project-icon orange-bg">BI</div><span class="status neutral">Planning</span></div>
+            <div><h2>BI Reporting Suite</h2><p>Centralize KPI dashboards and monthly reporting workflows.</p></div>
+            <div class="project-meta"><span><small>Owner</small><strong>Renee Adams</strong></span><span><small>Due</small><strong>Oct 10</strong></span></div>
+            <div class="progress-wrap"><div class="progress-label"><span>Progress</span><strong>32%</strong></div><div class="progress"><span style="width:32%"></span></div></div>
+            <div class="member-stack" aria-label="3 project members"><span>RA</span><span>JT</span><span>DK</span></div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
